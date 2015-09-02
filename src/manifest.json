@@ -1,0 +1,42 @@
+{
+    "manifest_version": 1,
+    "version": 1,
+    "type": "APP",
+    "name": {
+        "ja": "プリントクリエイター",
+        "en": "Invoice Creator",
+        "zh": "Invoice Creator"
+    },
+    "description": {
+        "ja": "プリントクリエイターは、kintoneアプリに登録されたデータを利用して、きれいに帳票印刷をするためのサービスです。マウス操作のみで帳票レイアウトが作成できます。もちろん、現在お使いの帳票もそのまま利用可能です。",
+        "en": "Invoice Creator can print a kintone record as an invoice.",
+        "zh": "Invoice Creator can print a kintone record as an invoice."
+    },
+    "icon": "images/icon.png",
+    "homepage_url": {
+        "ja": "https://pc.kintoneapp.com/user/plugin.html",
+        "en": "https://pc.kintoneapp.com/user/plugin.html"
+    },
+    "desktop": {
+        "js": [
+            "js/jquery.min.js",
+            "js/jsrender.min.js",
+            "js/desktop.js"
+        ],
+        "css": [
+            "css/desktop.css"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+        "js": [
+            "js/jquery.min.js",
+            "js/jsrender.min.js",
+            "js/config.js"
+        ],
+        "css": [
+            "css/config.css"
+        ],
+        "required_params": ["appCode"]
+    }
+}
