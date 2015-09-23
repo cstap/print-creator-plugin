@@ -178,7 +178,7 @@ jQuery.noConflict();
                 record = {};
                 var $select = $('#pcreatorPlugin-sheets');
                 record.user = user;
-                record.query = kintone.app.getQueryCondition();
+                record.query = kintone.app.getQuery().replace(/limit ([0-9]+)/, 'limit 500').replace(/offset ([0-9]+)/, 'offset 0');
                 record.ledgerSheetId = $select.val();
                 data = JSON.stringify(record);
                 $('#pcreatorPlugin-record').val(data);
